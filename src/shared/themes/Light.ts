@@ -1,28 +1,27 @@
-import { createTheme} from '@mui/material'
+import { createTheme } from '@mui/material';
 
 export const LightTheme = createTheme({
     palette: {
-        primary:{
-            main: '#9AA6AF',
-            dark: '#7F8A94',
-            light: '#BDC4CB',
-            contrastText: '#384452',
+        primary: {
+            main: '#000000',   
+            dark: '#1A1A1A',  
+            light: '#333333', 
+            contrastText: '#FFFFFF',
         },
         secondary: {
-            main: '#DDE1E6',
-            dark: '#C8CDD4',
-            light: '#EFF1F5',
-            contrastText: '#2E3742'
+            main: '#EAEAEA',  
+            dark: '#D6D6D6',  
+            light: '#F7F7F7', 
+            contrastText: '#000000' 
         },
-
         background: {
-            paper: '#FFFFFF',    
-            default: '#F4F5F7'   
+            paper: '#FFFFFF',  
+            default: '#FFFF' 
         },
         text: {
-            primary: '#2E3742',  
-            secondary: '#5C677D',  
-            disabled: '#A1A6B2'   
+            primary: '#000000',  
+            secondary: '#3A3A3A', 
+            disabled: '#A0A0A0'  
         }
     }
 });

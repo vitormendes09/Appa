@@ -1,14 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./routes";
 
-import { LightTheme } from "./shared/themes";
-import{DarkTheme} from "./shared/themes"
 import { AppThemeProvider } from "./shared/contexts/ThemeContext";
+import { MenuSuperior } from "./shared/components";
 export const App = () => {
   return (
     <AppThemeProvider>
       <BrowserRouter>
-        <AppRoutes />
+        <MenuSuperior/>
+        
       </BrowserRouter>
     </AppThemeProvider>
   );
