@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, IconButton, InputBase, Box } from "@mui/material";
+import { AppBar, Toolbar, IconButton, InputBase, Box, Drawer, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { Search, Menu, LightMode, DarkMode } from "@mui/icons-material";
 import { useAppThemeContext } from "../../contexts";
+import { MenuLateral } from "../MenuLatral/MenuLateral";
 
 // Estilos personalizados
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
-  backgroundColor: "rgba(255, 255, 255, 0.1)", // Transparente respeitando o tema
+  backgroundColor: "rgba(255, 255, 255, 0.5)", // Transparente respeitando o tema
   borderBottom: `2px solid ${theme.palette.primary.main}`, // Borda sólida
   backdropFilter: "blur(10px)", // Efeito de vidro fosco
 }));
@@ -29,6 +30,7 @@ const StyledInputBase = styled(InputBase)({
 export const MenuSuperior: React.FC = () => {
   const { toggleTheme, themeName } = useAppThemeContext();
   const [darkMode, setDarkMode] = useState(themeName === "dark");
+  const [menuAberto, setMenuAberto] = useState(false);
 
   const handleToggleTheme = () => {
     setDarkMode((prev) => !prev);
@@ -36,37 +38,57 @@ export const MenuSuperior: React.FC = () => {
   };
 
   return (
-    <StyledAppBar position="fixed">
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        {/* Logo */}
-        <Box sx={{ fontWeight: "bold", fontSize: "1.5rem", cursor: "pointer" }}>
-          <img 
-          src="/logofundoremovido.png" 
-          alt="Logo" 
-          style={{ height: "100%", maxHeight: "60px", objectFit: "contain" }}
-          />
-        </Box>
+    <>
+      <StyledAppBar position="fixed">
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          {/* Logo */}
+          <Box sx={{ fontWeight: "bold", fontSize: "1.5rem", cursor: "pointer" }}>
+            <img
+              src="/logofundoremovido.png"
+              alt="Logo"
+              style={{ height: "100%", maxHeight: "60px", objectFit: "contain" }}
+            />
+          </Box>
 
-        {/* Barra de Pesquisa */}
-        <SearchBox>
-          <Search sx={{ color: "gray" }} />
-          <StyledInputBase placeholder="Pesquisar..." />
-        </SearchBox>
+          {/* Barra de Pesquisa */}
+          <Box>
+            <Typography
+              component="span"
+              variant="h2"
+              fontWeight="bold"
+              sx={{
+                fontFamily: "'Lora', sans-serif ",
+                fontSize: "2.5rem",
+                color: "text.primary", // Cor diferente para APPA
+                paddingLeft: "2rem"
+              }}
+            >
+              APPA
+            </Typography>
+          </Box>
 
-        {/* Botões da direita */}
-        <Box sx={{ display: "flex", gap: 2 }}>
-          {/* Botão de alternância de tema */}
-          <IconButton onClick={handleToggleTheme} sx={{ border: "1px solid", borderRadius: "50%" }}>
-            {darkMode ? <DarkMode /> : <LightMode />}
-          </IconButton>
+          {/* Botões da direita */}
+          <Box sx={{ display: "flex", gap: 2 }}>
+            {/* Botão de alternância de tema */}
+            <IconButton onClick={handleToggleTheme} sx={{ border: "1px solid", borderRadius: "50%" }}>
+              {darkMode ? <DarkMode /> : <LightMode />}
+            </IconButton>
 
-          {/* Botão para abrir menu lateral */}
-          <IconButton sx={{ border: "1px solid", borderRadius: "50%" }}>
-            <Menu />
-          </IconButton>
-        </Box>
-      </Toolbar>
-    </StyledAppBar>
+            {/* Botão para abrir menu lateral */}
+            <IconButton sx={{ border: "1px solid", borderRadius: "50%" }}
+              onClick={() => setMenuAberto(true)}  >
+              <Menu />
+
+            </IconButton>
+          </Box>
+        </Toolbar>
+      </StyledAppBar>
+
+      {/* Menu Lateral */}
+
+      <MenuLateral open={menuAberto} onClose={() => setMenuAberto(false)} />
+
+    </>
   );
 };
 

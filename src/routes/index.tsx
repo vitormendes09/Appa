@@ -8,7 +8,7 @@ export const AppRoutes = () => {
     
     return(
         <Routes>
-            <Route path="/pagina-inicial" element={<Button variant="contained" color='primary' onClick={toggleTheme} > toggle Theme </Button>}/>
+            <Route path="/pagina-inicial" />
 
             <Route path="*" element={<Navigate to="/pagina-inicial"/>}/>
         </Routes>
