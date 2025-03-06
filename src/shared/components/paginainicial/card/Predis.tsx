@@ -28,8 +28,8 @@ export const Predis: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Predis_logo.jfif"
-				alt="Logo Gemine"
+				image={`${process.env.PUBLIC_URL}/cards/Predis_logo.jfif`}
+				alt="Logo Predis"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

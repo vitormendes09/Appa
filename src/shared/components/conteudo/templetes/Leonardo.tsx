@@ -33,7 +33,8 @@ export const Leonardo = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/leonardo_logo.webp"
+                   
+                    image={`${process.env.PUBLIC_URL}/templetes/leonardo_logo.webp`}
                     alt="Logo Leonardo"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

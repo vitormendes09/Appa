@@ -28,7 +28,7 @@ export const Google: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/google_logo.webp"
+				image={`${process.env.PUBLIC_URL}/cards/google_logo.webp`}
 				alt="Logo Google Assist"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

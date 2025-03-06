@@ -34,7 +34,8 @@ export const Pictory = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Pictory_logo.png"
+                    
+                    image={`${process.env.PUBLIC_URL}/templetes/Pictory_logo.png`}
                     alt="Logo Pictory"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

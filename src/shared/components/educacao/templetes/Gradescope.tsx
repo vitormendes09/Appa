@@ -33,7 +33,8 @@ export const Gradescope = () => {
                 <CardMedia
                     component="img"
                     height="60%" // Ocupa 80% da altura do card
-                    image="/templetes/gradescope_logo.jpg"
+        
+                    image={`${process.env.PUBLIC_URL}/templetes/gradescope_logo.jpg`}
                     alt="Logo Edmodo"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

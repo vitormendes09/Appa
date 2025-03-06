@@ -28,7 +28,8 @@ export const Grammarly: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/grammarly_logo.svg"
+		
+				image={`${process.env.PUBLIC_URL}/cards/grammarly_logo.svg`}
 				alt="Logo Grammarly"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

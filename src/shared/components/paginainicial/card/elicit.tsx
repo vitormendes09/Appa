@@ -28,7 +28,8 @@ export const Elicit: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Elicit_logo.png"
+				
+				image={`${process.env.PUBLIC_URL}/cards/Elicit_logo.png`}
 				alt="Logo Elicit"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

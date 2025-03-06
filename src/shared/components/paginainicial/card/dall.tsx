@@ -28,7 +28,8 @@ export const Dall: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/dall_logo.webp"
+
+				image={`${process.env.PUBLIC_URL}/cards/dall_logo.webp`}
 				alt="Logo Dall-E"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

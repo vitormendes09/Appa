@@ -28,8 +28,9 @@ export const Runway: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/runway_logo.png"
-				alt="Logo Gemine"
+				
+				image={`${process.env.PUBLIC_URL}/cards/runway_logo.png`}
+				alt="Logo Runway"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

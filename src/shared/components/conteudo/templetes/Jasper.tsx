@@ -33,7 +33,8 @@ export const Jasper = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/jasper_logo.webp"
+          
+                    image={`${process.env.PUBLIC_URL}/templetes/jasper_logo.webp`}
                     alt="Logo Jasper"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

@@ -33,7 +33,8 @@ export const Zapier = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Zapier_logo.jpg"
+                   
+                    image={`${process.env.PUBLIC_URL}/templetes/Zapier_logo.jpg`}
                     alt="Logo Pika"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

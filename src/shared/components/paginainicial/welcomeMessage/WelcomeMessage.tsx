@@ -9,7 +9,7 @@ export const WelcomeMessage = () => {
         textAlign: "left", 
         padding: "50px 20px",
         paddingTop: "150px",
-        backgroundImage: "url('/AI_1.jpg')",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/AI_1.jpg)`,
         backgroundSize: "cover",
         display: "flex",
         flexDirection: "column",

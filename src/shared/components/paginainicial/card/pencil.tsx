@@ -28,8 +28,9 @@ export const Pencil: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Pencil_logo.jpg"
-				alt="Logo Gemine"
+				
+				image={`${process.env.PUBLIC_URL}/cards/Pencil_logo.jpg`}
+				alt="Logo Pencil"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

@@ -33,7 +33,7 @@ export const Edmodo = () => {
                 <CardMedia
                     component="img"
                     height="70%" // Ocupa 80% da altura do card
-                    image="/templetes/Edmodo_logo.jpg"
+                    image={`${process.env.PUBLIC_URL}/templetes/Edmodo_logo.jpg`}
                     alt="Logo Edmodo"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

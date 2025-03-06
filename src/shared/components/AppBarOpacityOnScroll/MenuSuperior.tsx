@@ -44,10 +44,11 @@ export const MenuSuperior: React.FC = () => {
           {/* Logo */}
           <Box sx={{ fontWeight: "bold", fontSize: "1.5rem", cursor: "pointer" }}>
             <img
-              src="/logofundoremovido.png"
+              src={`${process.env.PUBLIC_URL}/logofundoremovido.png`}
               alt="Logo"
               style={{ height: "100%", maxHeight: "60px", objectFit: "contain" }}
             />
+
           </Box>
 
           {/* Barra de Pesquisa */}

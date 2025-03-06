@@ -28,8 +28,9 @@ export const Ocoya: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/ocoya_logo.webp"
-				alt="Logo Gemine"
+				
+				image={`${process.env.PUBLIC_URL}/cards/ocoya_logo.webp`}
+				alt="Logo Ocoya"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

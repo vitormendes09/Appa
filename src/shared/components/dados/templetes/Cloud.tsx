@@ -25,14 +25,16 @@ export const Cloud = () => {
         <Box
             sx={{
                 display: "flex",
-                paddingLeft: "10px"
+                paddingLeft: "10px",
+                
             }}
         >
             <Card sx={{ width: 300, height: "10rem", borderRadius: "8px", overflow: "hidden", boxShadow: 3, textAlign: "center" }}>
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/cloud_logo.png"
+                    
+                    image={`${process.env.PUBLIC_URL}/templetes/cloud_logo.png`}
                     alt="Logo Cloud"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

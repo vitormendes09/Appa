@@ -28,8 +28,8 @@ export const Adzooma: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Adzooma_logo.jfif"
-				alt="Logo Gemine"
+				image={`${process.env.PUBLIC_URL}/cards/Adzooma_logo.jfif`}
+				alt="Logo adzooma"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

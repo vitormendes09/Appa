@@ -35,7 +35,7 @@ const Estudos = () => {
         <>
 
             <Box sx = {{
-                marginTop: "2rem"
+                marginTop: "1rem"
             }}>
                 <Typography
                     component="span"

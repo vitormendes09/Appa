@@ -33,8 +33,9 @@ export const Otter = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Otter_logo.png"
-                    alt="Logo Pika"
+                    
+                    image={`${process.env.PUBLIC_URL}/templetes/Otter_logo.png`}
+                    alt="Logo Otter_logo"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem
                     }}

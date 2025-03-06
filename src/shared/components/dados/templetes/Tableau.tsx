@@ -33,7 +33,7 @@ export const Tableau = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Tableau_logo.webp"
+                    image={`${process.env.PUBLIC_URL}/templetes/Tableau_logo.webp`}
                     alt="Logo Tableau"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

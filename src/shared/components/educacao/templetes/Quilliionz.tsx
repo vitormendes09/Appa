@@ -33,7 +33,7 @@ export const Quillionz = () => {
                 <CardMedia
                     component="img"
                     height="70%" // Ocupa 80% da altura do card
-                    image="/templetes/Quillionz_logo.png"
+                    image={`${process.env.PUBLIC_URL}/templetes/Quillionz_logo.png`}
                     alt="Logo Quillionz"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

@@ -33,7 +33,7 @@ export const Scrivener = () => {
                 <CardMedia
                     component="img"
                     height="70%" // Ocupa 80% da altura do card
-                    image="/templetes/Scrivener_logo.png"
+                    image={`${process.env.PUBLIC_URL}/templetes/Scrivener_logo.png`}
                     alt="Logo Scrivener"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

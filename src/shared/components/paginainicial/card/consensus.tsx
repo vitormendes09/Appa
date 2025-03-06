@@ -28,7 +28,7 @@ export const Consensus: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Consensus_logo.avif"
+				image={`${process.env.PUBLIC_URL}/cards/Consensus_logo.avif`}
 				alt="Logo Consensus"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

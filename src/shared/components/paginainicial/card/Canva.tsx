@@ -28,8 +28,9 @@ export const Canva: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Canva_logo.png"
-				alt="Logo Gemine"
+				
+				image={`${process.env.PUBLIC_URL}/cards/Canva_logo.png`}
+				alt="Logo Canva"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}

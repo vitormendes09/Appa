@@ -26,14 +26,14 @@ export const Microsoft = () => {
             sx={{
                 display: "flex",
                 paddingLeft: "10px",
-                marginTop: "1rem"
+                marginTop: "0.5rem"
             }}
         >
             <Card sx={{ width: 300, height: "18rem", borderRadius: "8px", overflow: "hidden", boxShadow: 3, textAlign: "center" }}>
                 <CardMedia
                     component="img"
                     height="70%" // Ocupa 80% da altura do card
-                    image="/templetes/Microsoft_logo.jpg"
+                    image={`${process.env.PUBLIC_URL}/templetes/Microsoft_logo.jpg`}
                     alt="Logo Microsoft"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

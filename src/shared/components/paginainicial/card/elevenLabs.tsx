@@ -28,7 +28,8 @@ export const ElefenLabs: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/elevenLabs_logo.png"
+
+				image={`${process.env.PUBLIC_URL}/cards/elevenLabs_logo.png`}
 				alt="Logo elevenLabs"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

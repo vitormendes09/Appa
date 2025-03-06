@@ -28,7 +28,7 @@ export const Scholatcy: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/Scholarcy_logo.jpeg"
+				image={`${process.env.PUBLIC_URL}/cards/Scholarcy_logo.jpeg`}
 				alt="Logo Scholatcy"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

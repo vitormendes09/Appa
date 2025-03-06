@@ -33,7 +33,8 @@ export const Sicribe = () => {
                 <CardMedia
                     component="img"
                     height="70%" // Ocupa 80% da altura do card
-                    image="/templetes/Scribe_logo.png"
+        
+                    image={`${process.env.PUBLIC_URL}/templetes/Scribe_logo.png`}
                     alt="Logo Scribe"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

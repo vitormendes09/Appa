@@ -28,7 +28,7 @@ export const Adcrevative: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/AdCreative_logo.png"
+				image={`${process.env.PUBLIC_URL}/cards/AdCreative_logo.png`}
 				alt="Logo AdCreavitive"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem

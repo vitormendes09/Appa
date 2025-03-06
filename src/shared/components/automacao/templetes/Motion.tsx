@@ -33,7 +33,9 @@ export const Motion = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Motion_logo.png"
+
+                    image={`${process.env.PUBLIC_URL}/templetes/Motion_logo.png`}
+               
                     alt="Logo Motion"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem
@@ -42,11 +44,11 @@ export const Motion = () => {
 
                 <Typography
                     sx={{
-                        
+
                     }}
                     variant="h5"
                     color="text.primary"
-                    paddingTop= "0.5rem"
+                    paddingTop="0.5rem"
 
                 >
                     Motion
@@ -79,7 +81,7 @@ export const Motion = () => {
                     href="https://mootion.com/?ci=87291&gad_source=1&gclid=CjwKCAiAiaC-BhBEEiwAjY99qO97mIu_-NLMecb_LjvM-HP6pykVjHLk5flLRJusmDKmIZqJ1-qSlxoCq0MQAvD_BwE"
                     target="_blank"
                     rel="noopener noreferrer"
-                    
+
                 >
                     <LinkIcon />
                 </IconButton>

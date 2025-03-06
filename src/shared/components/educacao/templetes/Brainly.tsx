@@ -33,7 +33,7 @@ export const Brainly = () => {
                 <CardMedia
                     component="img"
                     height="80%" // Ocupa 80% da altura do card
-                    image="/templetes/Brainly_logo.webp"
+                    image={`${process.env.PUBLIC_URL}/templetes/Brainly_logo.webp`}
                     alt="Logo Brainly"
                     sx={{
                         borderBottom: "1px solid #ccc", // Borda inferior da imagem

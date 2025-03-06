@@ -28,8 +28,8 @@ export const Bing: React.FC = () => {
 			<CardMedia
 				component="img"
 				height="80%" // Ocupa 80% da altura do card
-				image="/cards/bing_logo.png"
-				alt="Logo Gemine"
+				image={`${process.env.PUBLIC_URL}/cards/bing_logo.png`}
+				alt="Logo Bing"
 				sx={{
 					borderBottom: "1px solid #ccc", // Borda inferior da imagem
 				}}
