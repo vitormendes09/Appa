@@ -1,5 +1,5 @@
 
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {  Routes, Route, Navigate } from "react-router-dom";
 
 import { PaginaInicial } from "../pages/inicial/paginalinical";
 import { PaginaDesing } from "../pages/desing/desingpg";
@@ -11,7 +11,7 @@ import { PaginaConteudo } from "../pages/conteudo/paginaConteudo";
 export const AppRoutes = () => {
 
     return (
-        <Router>
+        
             <Routes>
                 <Route path="/pagina-inicial" element={<PaginaInicial />} />
                 <Route path="/pagina-automacao" element={<PaginaAutomacao />} />
@@ -19,10 +19,8 @@ export const AppRoutes = () => {
                 <Route path="/pagina-dados" element={<PaginaDados />} />
                 <Route path="/pagina-educacao" element={<PaginaEducacao />} />
                 <Route path="/pagina-conteudo" element={<PaginaConteudo />} />
-
                 <Route path="*" element={<Navigate to="/pagina-inicial" />} />
             </Routes>
-        </Router>
 
     );
 };
